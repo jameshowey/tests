@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- ************************************************************************************************** -->
+<!--                                                                                                    -->
+<!-- Authors:       Colin Smythe    (IMS Global, UK)                                                    -->
+<!--                Wilbert Kraan   (CETIS, UK)                                                         -->
+<!-- Version:       1.0                                                                                 -->
+<!-- Date:          28 March, 2014                                                                      -->
+<!--                                                                                                    -->
+<!-- Description:   Manifest for the Test File (Valid) for the QTIv2.1 Entry Level Profile              -->
+<!--                Manifest for the 'VE-TP-01' test example.                                           -->
+<!--                All compliant systems should import this manifest.                                  -->
+<!--                                                                                                    -->
+<!-- History:       First formal release.                                                               -->
+<!--                                                                                                    -->
+<!-- Copyright:     2014 (c) IMS Global Learning Consortium 1999-2014. All Rights Reserved.             -->
+<!--                                                                                                    -->
+<!--                Use of this example to develop products or services is governed by the license with -->
+<!--                IMS found on the IMS website: http://www.imsglobal.org/license.html.                -->
+<!--                                                                                                    -->
+<!--                Permission is granted to all parties to use excerpts from this document as needed   -->
+<!--                in producing requests for proposals.                                                -->
+<!--                                                                                                    -->
+<!--                The limited permissions granted above are perpetual and will not be revoked by IMS  -->
+<!--                or its successors or assigns.                                                       -->
+<!--                                                                                                    -->
+<!--                THIS EXAMPLE IS BEING OFFERED WITHOUT ANY WARRANTY WHATSOEVER, AND IN PARTICULAR,   -->
+<!--                ANY WARRANTY OF NONINFRINGEMENT IS EXPRESSLY DISCLAIMED. ANY USE OF THIS SPECIFICA- -->
+<!--                TION SHALL BE MADE ENTIRELY AT THE IMPLEMENTERS OWN RISK, AND NEITHER THE CONSORTI- -->
+<!--                UM NOR ANY OF ITS MEMBERS OR SUBMITTERS, SHALL HAVE ANY LIABILITY WHATSOEVER TO ANY -->
+<!--                IMPLEMENTER OR THIRD PARTY FOR ANY DAMAGES OF ANY NATURE WHATSOEVER, DIRECTLY OR    -->
+<!--                INDIRECTLY, ARISING FROM THE USE OF THIS SPECIFICATION.                             -->
+<!--                                                                                                    -->
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+<manifest identifier="Manifest_qtiv2p1_EntryTest_VE_TP_01" 
+  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1
+  http://www.imsglobal.org/xsd/qti/qtiv2p1/qtiv2p1_imscpv1p2_v1p0.xsd
+  http://ltsc.ieee.org/xsd/LOM 
+  http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd                       
+  http://www.imsglobal.org/xsd/imsqti_metadata_v2p1
+  http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_metadata_v2p1p1.xsd">
+  <metadata>
+    <schema>QTIv2.1 Package</schema>
+    <schemaversion>1.0.0</schemaversion>
+    <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+      <educational>
+        <learningResourceType>
+          <source>QTIv2.1</source>
+          <value>QTI Package</value>
+        </learningResourceType>
+      </educational>
+      <general>
+        <identifier>
+          <entry>Manifest_qtiv2p1_EntryTest_VE_TP_01</entry>
+        </identifier>
+        <title>
+          <string>QTI 2.1 Entry Level Compliance Test: VE_TP_01</string>
+        </title>
+      </general>
+      <lifeCycle>
+        <contribute />
+        <version>
+          <string>Final 1.0</string>
+        </version>
+      </lifeCycle>
+      <rights>
+        <copyrightAndOtherRestrictions>
+          <source>LOMv1.0</source>
+          <value>yes</value>
+        </copyrightAndOtherRestrictions>
+        <description>
+          <string>2013 IMS Global Learning Consortium Inc.</string>
+        </description>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations />
+  <resources>
+    <resource type="imsqti_test_xmlv2p1" identifier="Resource1" href="Tests/Test_VE_TP_01/qtiv2p1_EntryTest_VE_TP_01.xml">
+      <metadata>
+        <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+          <general>
+            <identifier>
+              <entry>VE_TP_01</entry>
+            </identifier>
+            <title></title>
+          </general>
+          <lifeCycle>
+            <contribute />
+            <version>
+              <string>Final 1.0</string>
+            </version>
+          </lifeCycle>
+          <educational>
+            <description>
+              <string>Test containing a single Section with a T/F question only.</string>
+            </description>
+          </educational>
+          <qtiMetadata xmlns="http://www.imsglobal.org/xsd/imsqti_metadata_v2p1">
+            <interactionType>choiceInteraction</interactionType>
+            <feedbackType>none</feedbackType>
+            <solutionAvailable>false</solutionAvailable>
+          </qtiMetadata>
+        </lom>
+      </metadata>
+      <file href="Tests/Test_VE_TP_01/qtiv2p1_EntryTest_VE_TP_01.xml" />
+    </resource>
+    <resource type="imsqti_item_xmlv2p1" identifier="Resource3" href="Items/Item_VE_IP_01/qtiv2p1_EntryTest_VE_IP_01.xml">
+      <metadata>
+        <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+          <general>
+            <identifier>
+              <entry>VE_IP_01</entry>
+            </identifier>
+            <title></title>
+          </general>
+          <lifeCycle>
+            <contribute />
+            <version>
+              <string>Final 1.0</string>
+            </version>
+          </lifeCycle>
+          <educational>
+            <description>
+              <string>The T/F Question.</string>
+            </description>
+          </educational>
+          <qtiMetadata xmlns="http://www.imsglobal.org/xsd/imsqti_metadata_v2p1">
+            <interactionType>choiceInteraction</interactionType>
+            <feedbackType>none</feedbackType>
+            <solutionAvailable>false</solutionAvailable>
+          </qtiMetadata>
+        </lom>
+      </metadata>
+      <file href="Items/Item_VE_IP_01/qtiv2p1_EntryTest_VE_IP_01.xml" />
+    </resource>
+  </resources>
+</manifest>
