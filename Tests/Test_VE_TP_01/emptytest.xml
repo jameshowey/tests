@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ************************************************************************************************** -->
+<!--                                                                                                    -->
+<!-- Authors:       Colin Smythe    (IMS Global, UK)                                                    -->
+<!-- Version:       1.0                                                                                 -->
+<!-- Date:          28th March, 2014                                                                    -->
+<!--                                                                                                    -->
+<!-- Description:   Test File (Valid) for the QTIv2.1 Level Profile.                                    -->
+<!--                This is the single APIP Test/TestPart/Section with reference to the T/F question.   -->
+<!--                All compliant systems should import this QTI Test XML.                              -->
+<!--                                                                                                    -->
+<!-- History:       First formal release.                                                               -->
+<!--                                                                                                    -->
+<!-- Copyright:     2014 (c) IMS Global Learning Consortium 1999-2014. All Rights Reserved.             -->
+<!--                                                                                                    -->
+<!--                Use of this example to develop products or services is governed by the license with -->
+<!--                IMS found on the IMS website: http://www.imsglobal.org/license.html.                -->
+<!--                                                                                                    -->
+<!--                Permission is granted to all parties to use excerpts from this document as needed   -->
+<!--                in producing requests for proposals.                                                -->
+<!--                                                                                                    -->
+<!--                The limited permissions granted above are perpetual and will not be revoked by IMS  -->
+<!--                or its successors or assigns.                                                       -->
+<!--                                                                                                    -->
+<!--                THIS EXAMPLE IS BEING OFFERED WITHOUT ANY WARRANTY WHATSOEVER, AND IN PARTICULAR,   -->
+<!--                ANY WARRANTY OF NONINFRINGEMENT IS EXPRESSLY DISCLAIMED. ANY USE OF THIS SPECIFICA- -->
+<!--                TION SHALL BE MADE ENTIRELY AT THE IMPLEMENTERS OWN RISK, AND NEITHER THE CONSORTI- -->
+<!--                UM NOR ANY OF ITS MEMBERS OR SUBMITTERS, SHALL HAVE ANY LIABILITY WHATSOEVER TO ANY -->
+<!--                IMPLEMENTER OR THIRD PARTY FOR ANY DAMAGES OF ANY NATURE WHATSOEVER, DIRECTLY OR    -->
+<!--                INDIRECTLY, ARISING FROM THE USE OF THIS SPECIFICATION.                             -->
+<!--                                                                                                    -->
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+<assessmentTest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="VE-TP-01"
+    title="QTI v2.1 Entry Profile Single Test/TestPart Instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1p1.xsd">
+    <outcomeDeclaration identifier="TOTAL_SCORE" cardinality="single" baseType="integer">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="TOTAL_MAXSCORE" cardinality="single" baseType="float">
+        <defaultValue>
+            <value>1</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="TOTAL_MINSCORE" cardinality="single" baseType="float">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="TOTAL_NUMBERINCORRECT" cardinality="single" baseType="integer">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="TOTAL_NUMBERCORRECT" cardinality="single" baseType="integer">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="TOTAL_NUMBERPRESENTED" cardinality="single" baseType="integer">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="TOTAL_NUMBERSELECTED" cardinality="single" baseType="integer">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="TOTAL_NUMBERRESPONDED" cardinality="single" baseType="integer">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <testPart identifier="VE-TP-01-TPRT-01" navigationMode="linear" submissionMode="individual">
+        <assessmentSection identifier="VE-SP-01"
+            title="QTI v2.1 Entry Profile Single Section Instance" visible="true"
+            required="false" keepTogether="true" fixed="false">
+            <assessmentItemRef identifier="VE-IP-01"
+                href="../../Items/Item_VE_IP_01/qtiv2p1_EntryTest_VE_IP_01.xml" required="true"
+                fixed="true"/>
+        </assessmentSection>
+    </testPart>
+    <outcomeProcessing>
+        <setOutcomeValue identifier="TOTAL_SCORE">
+            <sum>
+                <testVariables variableIdentifier="SCORE"/>
+            </sum>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="TOTAL_MAXSCORE">
+            <sum>
+                <outcomeMaximum outcomeIdentifier="SCORE"/>
+            </sum>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="TOTAL_MINSCORE">
+            <sum>
+                <outcomeMinimum outcomeIdentifier="SCORE"/>
+            </sum>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="TOTAL_NUMBERINCORRECT">
+            <numberIncorrect/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="TOTAL_NUMBERCORRECT">
+            <numberCorrect/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="TOTAL_NUMBERRESPONDED">
+            <numberResponded/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="TOTAL_NUMBERSELECTED">
+            <numberSelected/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="TOTAL_NUMBERPRESENTED">
+            <numberPresented/>
+        </setOutcomeValue>
+    </outcomeProcessing>
+</assessmentTest>
