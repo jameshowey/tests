@@ -107,6 +107,35 @@
       </metadata>
       <file href="Tests/Test_VE_TP_01/qtiv2p1_EntryTest_VE_TP_01.xml" />
     </resource>
+    <resource type="imsqti_test_xmlv2p1" identifier="Resource1" href="Tests/Test_VE_TP_01/emptytest.xml">
+      <metadata>
+        <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+          <general>
+            <identifier>
+              <entry>emptytest</entry>
+            </identifier>
+            <title></title>
+          </general>
+          <lifeCycle>
+            <contribute />
+            <version>
+              <string>Final 1.0</string>
+            </version>
+          </lifeCycle>
+          <educational>
+            <description>
+              <string>emptytest </string>
+            </description>
+          </educational>
+          <qtiMetadata xmlns="http://www.imsglobal.org/xsd/imsqti_metadata_v2p1">
+            <interactionType>choiceInteraction</interactionType>
+            <feedbackType>none</feedbackType>
+            <solutionAvailable>false</solutionAvailable>
+          </qtiMetadata>
+        </lom>
+      </metadata>
+      <file href="Tests/Test_VE_TP_01/qtiv2p1_EntryTest_VE_TP_01.xml" />
+    </resource>
     <resource type="imsqti_item_xmlv2p1" identifier="Resource3" href="Items/Item_VE_IP_01/qtiv2p1_EntryTest_VE_IP_01.xml">
       <metadata>
         <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
