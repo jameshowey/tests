@@ -75,15 +75,6 @@
             <value>0</value>
         </defaultValue>
     </outcomeDeclaration>
-    <testPart identifier="VE-TP-01-TPRT-01" navigationMode="linear" submissionMode="individual">
-        <assessmentSection identifier="VE-SP-01"
-            title="QTI v2.1 Entry Profile Single Section Instance" visible="true"
-            required="false" keepTogether="true" fixed="false">
-            <assessmentItemRef identifier="VE-IP-01"
-                href="../../Items/Item_VE_IP_01/qtiv2p1_EntryTest_VE_IP_01.xml" required="true"
-                fixed="true"/>
-        </assessmentSection>
-    </testPart>
     <outcomeProcessing>
         <setOutcomeValue identifier="TOTAL_SCORE">
             <sum>
